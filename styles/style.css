@@ -180,7 +180,7 @@ header {
 
 @media (max-width: 760px) {
 
-/* header y navbar */
+/* header and navbar */
 
 header {
   display: flex; 
@@ -200,7 +200,7 @@ header {
   border-bottom: 1px solid white;
 }
 
-/* main y articles */
+/* main and articles */
 
 main {
   display: flex;
@@ -231,6 +231,30 @@ main {
 
 .main-article .content {
   width: 100%;
+}
+
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar li {
+  flex: 1;
+}
+
+.articles-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 26px 60px;
+}
+
+.articles-container .article {
+  width: calc(50% - 60px);
 }
 
 }
