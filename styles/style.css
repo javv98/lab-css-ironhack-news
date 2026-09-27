@@ -83,6 +83,10 @@ header {
   justify-content: flex-start;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .navbar li {
   width: 130px;
   height: 40px;
@@ -178,6 +182,9 @@ header {
   
 /* Write your CSS below */
 
+
+/* Smartphone view */
+
 @media (max-width: 760px) {
 
 /* header and navbar */
@@ -192,6 +199,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.burger-menu {
+  display: none;
 }
 
 .navbar li {
@@ -235,16 +246,26 @@ main {
 
 }
 
+/* Tablet view */
+
 @media (min-width: 760px) and (max-width: 1024px) {
+
+/* header and navbar */
 
 .navbar {
   display: flex;
   justify-content: space-evenly;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .navbar li {
   flex: 1;
 }
+
+/* main and articles */
 
 .articles-container {
   display: flex;
@@ -256,5 +277,38 @@ main {
 .articles-container .article {
   width: calc(50% - 60px);
 }
+
+}
+
+/* Small Mobile Screens view */
+
+@media (max-width: 480px) {
+
+.newspaper-name {
+  border: none;
+}
+  
+.navbar {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.burger-menu {
+  display: block;
+  width: 30px;
+  background-color: #333;
+}
+
+.burger-menu img {
+  display: block;
+  width: auto;
+
+}
+
+
 
 }
